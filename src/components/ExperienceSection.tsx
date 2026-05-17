@@ -14,7 +14,7 @@ const experiences = [
     company: "Edunet Foundation × AICTE",
     period: "Dec 2024 – Jan 2025 · Remote",
     description:
-      "Built a Java-based SMS Spam Detection project using Machine Learning — implemented text preprocessing and a Naive Bayes classifier. Strengthened skills in Java, data handling, and ML model accuracy tuning in a remote collaborative environment.",
+      "Built an SMS Spam Detection project using Machine Learning — implemented text preprocessing and a Naive Bayes classifier. Strengthened skills in data handling, model evaluation, and ML accuracy tuning in a remote collaborative environment.",
   },
   {
     role: "Cloud Virtual Intern",

@@ -14,8 +14,8 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Mohd Varish — Full Stack Developer Portfolio" },
-      { name: "description", content: "Portfolio of Mohd Varish, an aspiring Full Stack Developer skilled in Java, MERN stack, and cloud technologies." },
+      { title: "Mohd Varish — Full Stack Developer (MERN)" },
+      { name: "description", content: "Portfolio of Mohd Varish — Full Stack Developer specializing in the MERN stack. Building scalable web applications with React, Node.js, Express, and MongoDB." },
     ],
   }),
 });

@@ -2,7 +2,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import { Award, Trophy, BookOpen, Rocket } from "lucide-react";
 
 const certifications = [
-  { title: "Java Full Stack", issuer: "Certification", icon: Award },
+  { title: "Full Stack Web Development", issuer: "Certification", icon: Award },
   { title: "Foundations of AI", issuer: "Microsoft × AICTE", icon: Award },
   { title: "Data Analytics", issuer: "Certification", icon: Award },
   { title: "Citi — Software Development Job Simulation", issuer: "Citi / Forage", icon: Award },
@@ -11,9 +11,9 @@ const certifications = [
 ];
 
 const achievements = [
-  { icon: Trophy, title: "200+ LeetCode Problems", description: "Sharpening DSA and problem-solving consistency." },
-  { icon: BookOpen, title: "DSA with Java", description: "Completed an in-depth DSA course in Java." },
-  { icon: Rocket, title: "Hackathon Builder", description: "Built and shipped projects under tight deadlines." },
+  { icon: Trophy, title: "250+ LeetCode Problems", description: "Consistent DSA practice across arrays, trees, graphs, and DP." },
+  { icon: BookOpen, title: "Data Structures & Algorithms", description: "In-depth DSA coursework with a strong focus on problem-solving patterns." },
+  { icon: Rocket, title: "Hackathon Builder", description: "Shipped end-to-end full-stack projects under tight deadlines." },
 ];
 
 export function CertificationsSection() {

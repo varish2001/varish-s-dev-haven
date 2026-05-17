@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from "react";
 
 const highlights = [
   { icon: GraduationCap, text: "B.Tech CSE (AI) — Galgotias University" },
-  { icon: Code2, text: "MERN Stack & Java Developer" },
+  { icon: Code2, text: "Full Stack Developer · MERN Specialist" },
   { icon: Briefcase, text: "Interned at Microsoft, AICTE & AWS Academy" },
-  { icon: Trophy, text: "200+ LeetCode Problems Solved" },
+  { icon: Trophy, text: "250+ LeetCode Problems Solved" },
 ];
 
 function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
@@ -61,20 +61,20 @@ export function AboutSection() {
         <div className="mx-auto mb-10 h-1 w-16 rounded-full bg-primary" />
 
         <p className="text-muted-foreground text-center max-w-2xl mx-auto leading-relaxed">
-          I'm a final-year B.Tech Computer Science Engineering (AI) student at Galgotias University
-          with a strong interest in software development and full-stack web technologies. I build
-          hands-on with JavaScript, React.js, Node.js, Express.js, MongoDB, and Java — shipping
-          practical web apps like <span className="text-primary">WanderLust</span>,
+          I'm a final-year B.Tech Computer Science (AI) student at Galgotias University and a
+          Full Stack Developer specializing in the MERN stack. I build production-grade web apps
+          with React, Node.js, Express, and MongoDB — including
+          <span className="text-primary"> WanderLust</span>,
           <span className="text-primary"> Authentication-MERN</span>, and an
-          <span className="text-primary"> Expense Tracker</span>. I sharpen problem-solving daily on
-          LeetCode and I'm actively seeking internship or entry-level opportunities in Full Stack
-          Development or Software Engineering.
+          <span className="text-primary"> Expense Tracker</span>. I sharpen DSA daily on LeetCode
+          and I'm actively seeking software engineering internships and full-time roles at
+          product-focused startups and companies.
         </p>
 
         {/* Stats counters */}
         <div className="mt-10 flex flex-wrap justify-center gap-8">
           <div className="flex flex-col items-center">
-            <Counter target={200} suffix="+" />
+            <Counter target={250} suffix="+" />
             <span className="mt-1 text-xs text-muted-foreground">LeetCode Problems</span>
           </div>
           <div className="flex flex-col items-center">
