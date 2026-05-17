@@ -1,12 +1,12 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const categories = [
-  { title: "Languages", skills: ["Java", "JavaScript"], icon: "💻" },
-  { title: "Frontend", skills: ["HTML", "CSS", "JavaScript"], icon: "🎨" },
-  { title: "Backend", skills: ["Node.js", "Express.js"], icon: "⚙️" },
-  { title: "Database", skills: ["MongoDB"], icon: "🗄️" },
-  { title: "Tools", skills: ["Git", "GitHub", "VS Code"], icon: "🛠️" },
-  { title: "Cloud", skills: ["AWS", "Azure"], icon: "☁️" },
+  { title: "Languages", skills: ["Java", "JavaScript", "Python", "SQL"], icon: "💻" },
+  { title: "Frontend", skills: ["React.js", "HTML5", "CSS3", "Tailwind"], icon: "🎨" },
+  { title: "Backend", skills: ["Node.js", "Express.js", "REST APIs"], icon: "⚙️" },
+  { title: "Database", skills: ["MongoDB", "MySQL"], icon: "🗄️" },
+  { title: "Tools", skills: ["Git", "GitHub", "VS Code", "Postman"], icon: "🛠️" },
+  { title: "Cloud & AI", skills: ["AWS", "Azure", "Prompt Engineering"], icon: "☁️" },
 ];
 
 export function SkillsSection() {

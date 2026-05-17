@@ -5,10 +5,11 @@ import { useEffect, useRef, useState } from "react";
 const floatingSymbols = ["{ }", "< />", "( )", "=>", "[ ]", "//", "&&", "||", "$ _", "fn()", "::"];
 
 const codeLines = [
-  'const developer = "Mohd Varish";',
-  'const stack = ["Java", "MERN"];',
-  "function buildApp() {",
-  "  return <Amazing />;",
+  'const dev = "Mohd Varish";',
+  'const role = "Full Stack Dev";',
+  'const stack = ["MERN", "Java"];',
+  "function ship() {",
+  "  return <Impact />;",
   "}",
 ];
 
@@ -166,10 +167,10 @@ export function HeroSection() {
           Mohd <span className="gradient-text">Varish</span>
         </h1>
         <p className="mt-4 text-xl text-muted-foreground sm:text-2xl animate-fade-up" style={{ animationDelay: "0.6s" }}>
-          Aspiring Full Stack Developer
+          Final-Year B.Tech CSE (AI) · Aspiring Software Developer
         </p>
-        <p className="mt-3 text-muted-foreground max-w-lg mx-auto animate-fade-up" style={{ animationDelay: "0.8s" }}>
-          Building scalable and practical web applications
+        <p className="mt-3 text-muted-foreground max-w-xl mx-auto animate-fade-up" style={{ animationDelay: "0.8s" }}>
+          MERN Stack &amp; Java developer building practical, scalable web applications. Open to internship opportunities.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: "1s" }}>
           <Button size="lg" className="magnetic-btn" asChild>

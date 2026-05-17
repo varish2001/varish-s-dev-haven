@@ -3,10 +3,10 @@ import { GraduationCap, Code2, Briefcase, Trophy } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const highlights = [
-  { icon: GraduationCap, text: "B.Tech CSE (AI) — Final Year" },
-  { icon: Code2, text: "200+ LeetCode Problems Solved" },
-  { icon: Briefcase, text: "Internships at Microsoft, SAP & AWS" },
-  { icon: Trophy, text: "Java & MERN Stack Developer" },
+  { icon: GraduationCap, text: "B.Tech CSE (AI) — Galgotias University" },
+  { icon: Code2, text: "MERN Stack & Java Developer" },
+  { icon: Briefcase, text: "Interned at Microsoft, AICTE & AWS Academy" },
+  { icon: Trophy, text: "200+ LeetCode Problems Solved" },
 ];
 
 function Counter({ target, suffix = "" }: { target: number; suffix?: string }) {
@@ -61,10 +61,14 @@ export function AboutSection() {
         <div className="mx-auto mb-10 h-1 w-16 rounded-full bg-primary" />
 
         <p className="text-muted-foreground text-center max-w-2xl mx-auto leading-relaxed">
-          I'm a final-year B.Tech Computer Science (AI) student passionate about building efficient,
-          scalable web applications. Skilled in Java and the MERN stack, I've completed internships
-          with Microsoft (AICTE), SAP, and AWS Academy. I enjoy solving algorithmic challenges and
-          exploring backend systems.
+          I'm a final-year B.Tech Computer Science Engineering (AI) student at Galgotias University
+          with a strong interest in software development and full-stack web technologies. I build
+          hands-on with JavaScript, React.js, Node.js, Express.js, MongoDB, and Java — shipping
+          practical web apps like <span className="text-primary">WanderLust</span>,
+          <span className="text-primary"> Authentication-MERN</span>, and an
+          <span className="text-primary"> Expense Tracker</span>. I sharpen problem-solving daily on
+          LeetCode and I'm actively seeking internship or entry-level opportunities in Full Stack
+          Development or Software Engineering.
         </p>
 
         {/* Stats counters */}
@@ -78,7 +82,7 @@ export function AboutSection() {
             <span className="mt-1 text-xs text-muted-foreground">Internships</span>
           </div>
           <div className="flex flex-col items-center">
-            <Counter target={3} />
+            <Counter target={6} suffix="+" />
             <span className="mt-1 text-xs text-muted-foreground">Projects</span>
           </div>
         </div>

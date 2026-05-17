@@ -4,18 +4,24 @@ import { Briefcase } from "lucide-react";
 const experiences = [
   {
     role: "AI Intern",
-    company: "Microsoft (AICTE)",
-    description: "Worked on AI/ML projects as part of the AICTE-Microsoft virtual internship program. Gained hands-on experience with machine learning concepts and tools.",
+    company: "Microsoft — Foundations of AI",
+    period: "Apr 2025 – May 2025 · New Delhi",
+    description:
+      "Completed a 4-week Foundations of AI internship under Microsoft's AI initiative (supported by Edunet × AICTE). Built a mini Image Detection project inspired by Copilot, working hands-on with Azure services and Python.",
   },
   {
-    role: "NLP Intern",
-    company: "Microsoft & SAP",
-    description: "Explored Natural Language Processing techniques and applications. Collaborated on projects involving text analysis and language understanding.",
+    role: "AI Intern",
+    company: "Edunet Foundation × AICTE",
+    period: "Dec 2024 – Jan 2025 · Remote",
+    description:
+      "Built a Java-based SMS Spam Detection project using Machine Learning — implemented text preprocessing and a Naive Bayes classifier. Strengthened skills in Java, data handling, and ML model accuracy tuning in a remote collaborative environment.",
   },
   {
-    role: "Cloud Computing Intern",
-    company: "AWS Academy",
-    description: "Learned cloud architecture fundamentals, including compute, storage, and networking services on AWS. Completed hands-on labs and projects.",
+    role: "Cloud Virtual Intern",
+    company: "EduSkills Foundation × AWS Academy",
+    period: "Oct 2024 – Dec 2024 · Remote",
+    description:
+      "AWS Academy cloud internship covering core AWS services, cloud architecture, deployment models, and security fundamentals. Completed guided labs on IaaS, storage, networking, and cloud-based project deployment.",
   },
 ];
 
@@ -65,6 +71,7 @@ export function ExperienceSection() {
                 <div className={`glow-card ml-14 w-full rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 md:ml-0 md:w-[calc(50%-3rem)]`}>
                   <h3 className="font-semibold text-foreground">{exp.role}</h3>
                   <p className="mt-1 text-sm font-medium text-primary">{exp.company}</p>
+                  <p className="mt-1 text-xs font-mono text-muted-foreground">{exp.period}</p>
                   <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{exp.description}</p>
                 </div>
               </div>

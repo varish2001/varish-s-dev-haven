@@ -9,27 +9,60 @@ const projects = [
     description:
       "An Airbnb-inspired full-stack MERN application for listing, exploring, and reviewing travel destinations. Features user authentication, image uploads, and interactive maps.",
     tech: ["MongoDB", "Express.js", "React", "Node.js"],
-    github: "https://github.com/varish2001",
+    category: "Full Stack",
+    github: "https://github.com/varish2001/Wanderlust-",
     demo: null,
     color: "oklch(0.62 0.19 250)",
   },
   {
-    title: "Know Your Roots",
+    title: "Authentication MERN",
     description:
-      "A cultural heritage platform designed to help users discover and connect with their cultural roots. Built with modern web technologies for an engaging user experience.",
-    tech: ["HTML", "CSS", "JavaScript", "Node.js"],
-    github: "https://github.com/varish2001",
+      "Production-grade authentication system built on the MERN stack with JWT-based sessions, password hashing, and protected routes. A reusable boilerplate for secure user flows.",
+    tech: ["MongoDB", "Express.js", "React", "JWT"],
+    category: "Full Stack",
+    github: "https://github.com/varish2001/Authentication-MERN",
     demo: null,
     color: "oklch(0.7 0.2 280)",
   },
   {
-    title: "To-Do List App",
+    title: "Expense Tracker",
     description:
-      "A desktop task management application built with Java Swing. Features task creation, editing, deletion, and completion tracking with a clean GUI.",
-    tech: ["Java", "Swing", "AWT"],
-    github: "https://github.com/varish2001",
+      "Full-stack personal finance tracker to log income, expenses, and visualise spending trends. Backed by a REST API with persistent storage and a responsive dashboard UI.",
+    tech: ["React", "Node.js", "Express.js", "MongoDB"],
+    category: "Full Stack",
+    github: "https://github.com/varish2001/Expense-Tracker-Full-stack",
     demo: null,
     color: "oklch(0.6 0.18 160)",
+  },
+  {
+    title: "The Ultimate Task Board",
+    description:
+      "A Java-based task management application that helps users organise, track, and prioritise tasks efficiently with a clean and intuitive interface.",
+    tech: ["Java", "OOP", "Swing"],
+    category: "Java",
+    github: "https://github.com/varish2001/The-Ultimate-Task-Board-0",
+    demo: null,
+    color: "oklch(0.7 0.18 60)",
+  },
+  {
+    title: "SMS Spam Detection",
+    description:
+      "Machine learning classifier that detects spam SMS messages using text preprocessing and Naive Bayes. Built during the Edunet × AICTE Java/ML internship.",
+    tech: ["Python", "ML", "Naive Bayes", "Jupyter"],
+    category: "Machine Learning",
+    github: "https://github.com/varish2001/SMS-SPAM-DETECTION-1",
+    demo: null,
+    color: "oklch(0.65 0.2 30)",
+  },
+  {
+    title: "Varish_fit",
+    description:
+      "A fitness-focused web app with workout tracking and a responsive UI. Built with vanilla JavaScript to sharpen DOM, state, and layout fundamentals.",
+    tech: ["JavaScript", "HTML", "CSS"],
+    category: "Frontend",
+    github: "https://github.com/varish2001/Varish_fit",
+    demo: null,
+    color: "oklch(0.7 0.18 200)",
   },
 ];
 
@@ -61,6 +94,9 @@ function ProjectCard({ project, index }: { project: typeof projects[0]; index: n
         className="mb-4 h-1 w-12 rounded-full transition-all duration-500 group-hover:w-full"
         style={{ backgroundColor: project.color }}
       />
+      <div className="mb-2 text-[10px] font-mono uppercase tracking-widest text-muted-foreground">
+        {project.category}
+      </div>
       <div className="mb-3 flex items-center gap-2">
         <div className="h-2 w-2 rounded-full bg-primary animate-pulse-glow" />
         <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
