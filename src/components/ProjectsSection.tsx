@@ -35,19 +35,9 @@ const projects = [
     color: "oklch(0.6 0.18 160)",
   },
   {
-    title: "The Ultimate Task Board",
-    description:
-      "A Java-based task management application that helps users organise, track, and prioritise tasks efficiently with a clean and intuitive interface.",
-    tech: ["Java", "OOP", "Swing"],
-    category: "Java",
-    github: "https://github.com/varish2001/The-Ultimate-Task-Board-0",
-    demo: null,
-    color: "oklch(0.7 0.18 60)",
-  },
-  {
     title: "SMS Spam Detection",
     description:
-      "Machine learning classifier that detects spam SMS messages using text preprocessing and Naive Bayes. Built during the Edunet × AICTE Java/ML internship.",
+      "Machine learning classifier that detects spam SMS messages using text preprocessing and a Naive Bayes model. Built during the Edunet × AICTE AI internship.",
     tech: ["Python", "ML", "Naive Bayes", "Jupyter"],
     category: "Machine Learning",
     github: "https://github.com/varish2001/SMS-SPAM-DETECTION-1",

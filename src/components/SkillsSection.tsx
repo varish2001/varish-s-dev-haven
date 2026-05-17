@@ -1,7 +1,7 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const categories = [
-  { title: "Languages", skills: ["Java", "JavaScript", "Python", "SQL"], icon: "💻" },
+  { title: "Languages", skills: ["JavaScript", "TypeScript", "Python", "SQL"], icon: "💻" },
   { title: "Frontend", skills: ["React.js", "HTML5", "CSS3", "Tailwind"], icon: "🎨" },
   { title: "Backend", skills: ["Node.js", "Express.js", "REST APIs"], icon: "⚙️" },
   { title: "Database", skills: ["MongoDB", "MySQL"], icon: "🗄️" },

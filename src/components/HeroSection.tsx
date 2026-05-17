@@ -7,7 +7,7 @@ const floatingSymbols = ["{ }", "< />", "( )", "=>", "[ ]", "//", "&&", "||", "$
 const codeLines = [
   'const dev = "Mohd Varish";',
   'const role = "Full Stack Dev";',
-  'const stack = ["MERN", "Java"];',
+  'const stack = ["React","Node","Mongo"];',
   "function ship() {",
   "  return <Impact />;",
   "}",
@@ -167,10 +167,10 @@ export function HeroSection() {
           Mohd <span className="gradient-text">Varish</span>
         </h1>
         <p className="mt-4 text-xl text-muted-foreground sm:text-2xl animate-fade-up" style={{ animationDelay: "0.6s" }}>
-          Final-Year B.Tech CSE (AI) · Aspiring Software Developer
+          Full Stack Developer <span className="text-foreground/80">specializing in the</span> <span className="text-primary">MERN Stack</span>
         </p>
-        <p className="mt-3 text-muted-foreground max-w-xl mx-auto animate-fade-up" style={{ animationDelay: "0.8s" }}>
-          MERN Stack &amp; Java developer building practical, scalable web applications. Open to internship opportunities.
+        <p className="mt-3 text-muted-foreground max-w-xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: "0.8s" }}>
+          Final-year B.Tech CSE (AI) student building production-grade web apps with React, Node.js, Express, and MongoDB. 250+ LeetCode problems solved. Open to internships and full-time roles.
         </p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: "1s" }}>
           <Button size="lg" className="magnetic-btn" asChild>
