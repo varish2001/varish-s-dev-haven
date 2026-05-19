@@ -1,9 +1,11 @@
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import { Mail, Linkedin, Github, Send } from "lucide-react";
+import { Mail, Linkedin, Github, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+
+const WHATSAPP_NUMBER = "918287329154";
 
 const socials = [
   { icon: Mail, label: "Email", href: "mailto:varishwork20@gmail.com", text: "varishwork20@gmail.com" },
@@ -14,6 +16,19 @@ const socials = [
 export function ContactSection() {
   const { ref, isVisible } = useScrollAnimation();
   const [submitted, setSubmitted] = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const text =
+      `Hi Varish, I'm ${form.name}.\n` +
+      (form.subject ? `Subject: ${form.subject}\n` : "") +
+      `\n${form.message}\n\n` +
+      `Reply to: ${form.email}`;
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    window.open(url, "_blank", "noopener,noreferrer");
+    setSubmitted(true);
+  };
 
   return (
     <section id="contact" className="py-24 px-6">
@@ -54,23 +69,47 @@ export function ContactSection() {
           </div>
 
           {/* Contact form */}
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSubmitted(true);
-            }}
-            className="flex flex-col gap-4"
-          >
-            <Input placeholder="Your Name" required className="bg-card" />
-            <Input type="email" placeholder="Your Email" required className="bg-card" />
-            <Input placeholder="Subject" className="bg-card" />
-            <Textarea placeholder="Your Message" rows={5} required className="bg-card" />
-            {submitted ? (
-              <p className="text-sm text-primary font-medium">Thanks for reaching out! 🎉</p>
-            ) : (
-              <Button type="submit" size="lg">
-                <Send size={16} /> Send Message
-              </Button>
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+            <Input
+              placeholder="Your Name"
+              required
+              maxLength={100}
+              value={form.name}
+              onChange={(e) => setForm({ ...form, name: e.target.value })}
+              className="bg-card"
+            />
+            <Input
+              type="email"
+              placeholder="Your Email"
+              required
+              maxLength={255}
+              value={form.email}
+              onChange={(e) => setForm({ ...form, email: e.target.value })}
+              className="bg-card"
+            />
+            <Input
+              placeholder="Subject"
+              maxLength={150}
+              value={form.subject}
+              onChange={(e) => setForm({ ...form, subject: e.target.value })}
+              className="bg-card"
+            />
+            <Textarea
+              placeholder="Your Message"
+              rows={5}
+              required
+              maxLength={1000}
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              className="bg-card"
+            />
+            <Button type="submit" size="lg">
+              <MessageCircle size={16} /> Send via WhatsApp
+            </Button>
+            {submitted && (
+              <p className="text-sm text-primary font-medium">
+                Opening WhatsApp… if nothing happens, allow popups and try again.
+              </p>
             )}
           </form>
         </div>
