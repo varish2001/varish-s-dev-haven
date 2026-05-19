@@ -25,7 +25,13 @@ export function ContactSection() {
       (form.subject ? `Subject: ${form.subject}\n` : "") +
       `\n${form.message}\n\n` +
       `Reply to: ${form.email}`;
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+    const encoded = encodeURIComponent(text);
+    const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+    // Use WhatsApp Web on desktop (avoids api.whatsapp.com redirect that some
+    // networks block) and the native app deep link on mobile.
+    const url = isMobile
+      ? `whatsapp://send?phone=${WHATSAPP_NUMBER}&text=${encoded}`
+      : `https://web.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encoded}`;
     window.open(url, "_blank", "noopener,noreferrer");
     setSubmitted(true);
   };
